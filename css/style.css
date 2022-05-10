@@ -1,0 +1,279 @@
+body{
+    background-color:#eaeaea ;
+    font-family: 'Montserrat', sans-serif;
+}
+.wrapper{
+    padding: 0 150px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.pizza-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 36px;
+    padding-bottom: 40px;
+}
+.navigation{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+.navigation>li{
+    padding-left: 23px;
+}
+.navigation>li:first-child{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+.divider{
+    padding-left: 23px;
+}
+
+.navigation>li>a{
+    text-decoration: none;
+    color: #494949;
+}
+.banner{
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    position: relative;
+    padding: 260 0 285 0px;
+    height: 765px;
+}
+.pizza-photo{
+    position: absolute;
+    right: 310px;
+    top: 55px;
+}
+.title{
+    font-size: 50px;
+    padding-top: 260px;
+    margin-bottom: 23px;
+}
+.description{
+    font-size: 25px;
+    line-height:30px;
+    max-width:570px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 24px;
+}
+.button{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 16px 32px;
+    display: inline-block;
+    max-width: 190px;
+    text-align: center;
+}
+.page-title-div{
+    display: flex;
+    flex-direction: row;
+}
+.page-title{
+    font-size: 45px;
+    color: #282828;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    position: static;
+    padding-left: 25px;
+    }
+.wave-before{
+    padding-left: 520px;
+    padding-top: 47px;
+}
+.wave-after{
+    margin-left: 23px;
+    padding-top: 47px;
+}
+.page-description{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size:20px;
+    color: #a8a8a8;
+    padding-left: 615px;
+    margin-top: -20px;
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+    padding-left: 605px;
+ }
+.menu>li>a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #494848;   
+    margin-left: 23px;
+}
+.active{
+    margin-left: -23px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #ee252d;
+    position: relative;
+}
+.active::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    margin: 0 auto;
+    display:block;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom: 7px solid #ee252d;
+}
+.ott{
+    max-width: 1170px;
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    padding: 80px 70px 60px 50px;
+    margin-top: 45px;
+    margin-left: 325px;
+    margin-bottom: 70px;
+}
+.ottn1, .ottn2, .ottn3{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 100%;
+    top: 90px;
+}
+.ottn1>img{
+    width: 125px;
+    height: 75px;
+}
+.ottn2>img{
+    width: 185px;
+    height: 80px;
+}
+.ottn3>img{
+    width: 145px;
+    height: 75px;
+}
+.ott>div>h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    margin-top: -50px;
+}
+.ott>div>h2{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 700;
+}
+.ott>div>p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.create-your-legend{
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 105px;
+    margin-left: 730px;
+    margin-bottom: 95px;
+    padding: 35px 50px;
+    background-image: url(../img/create-your-legend.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+}
+.footer{
+    margin-top:95px;
+    width:auto;
+    height: 105px;
+    background-image: url(..//img/footer-red-layer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.footer>.wrapper>p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #eaeaea;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 350px;
+}
+@media (max-width: 1500px){
+    .wrapper{
+        max-width: 800px;
+    }
+    .pizza-photo{
+        display: none;
+    }
+    .wrapper {
+        padding: 0px 100px;
+    }
+    .h2{
+        font-size: 35px;
+    }
+    .h2+p{
+        font-size: 18px;
+    }
+    .menu{
+        margin-left: -200px;
+    }
+    .page{
+        margin-left: -300px;
+    }
+    .create-your-legend{
+        margin-left: 400px;
+    }
+    .ott{
+        flex-direction: column;
+    }
+    .ottn1>p, .ottn2>p, .ottn3>p{
+        margin-bottom: 50px;
+    }
+}  
+@media (max-width:800px){
+    .pizza-navigation{
+        flex-direction: column;
+    }
+    .wave-before, .wave-after{
+        display: none;
+    }
+    .page-title{
+        margin-left: 300px;
+    }
+    .page-description{
+        margin-left: -300px;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .divider{
+        display: none;
+    }
+    .active{
+        border-bottom: none;
+    }
+    .active::before{
+        display: none;
+    }
+}
+@media (max-width:600px){
+    .create-your-legend{
+    font-size: 20px;
+    }
+   
